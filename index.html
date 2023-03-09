@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up Form</title>
+
+    <style>
+        img[alt="background"] {
+            /* width: clamp(320px,1920px,100vh);
+            height: clamp(180px,1080px,100vh); */
+            width: 100vw;
+            height: 100vh;
+            position: absolute;
+            float: left;
+        }
+
+        img[alt="sidebar"] {
+            width: 100%;
+            height: 100px;
+            
+        }
+
+        section {
+            margin-left:50%;
+            height: 100vh;
+            position: relative;
+            padding: 1em;
+            border: 1px solid #ccc;
+            border-radius: 1em;
+            border-color: brown;
+            background-color: whitesmoke;
+            /* background-position: right; */
+        }
+
+        form{
+            /* Center the form on the page */
+            margin: 0 auto;
+            width: 400px;
+            /* Form outline */
+            padding: 1em;
+            border: 1px solid #ccc;
+            border-radius: 1em;
+        }
+
+        button {
+
+        }
+
+        div.sidebar{
+            width: 50vh;
+            height: 200px;
+            background-color: black;
+            opacity: 0.5;
+            position: relative;
+            top: 50vh;
+        }
+
+        :required {
+
+        }
+    </style>
+</head>
+
+<body>
+    <figure>
+        <img src="vadim-sherbakov-NQSWvyVRIJk-unsplash.jpg" alt="background">
+        <figcaption>Photo by Vadim Sherbakov on <a href="https://unsplash.com/photos/NQSWvyVRIJk">Unsplash</a></figcaption>
+    </figure>
+
+    <div class="sidebar">
+        <img src="photo-1577083862054-7324cd025fa6.webp" alt="sidebar">
+    </div>
+
+    <section>
+        <h2>This is not a real online services! You know you need something like this in your life to help you realize
+            your deepest dreams. Sign up <em>now</em> to get started.</h2>
+        <h2>You <em>know</em> you want to</h2>
+
+        <form>
+            <h2>Let's do this!</h2>
+            <p>
+                <label for="firstname">
+                    <span>First Name: </span>
+                    <!-- <strong><span aria-label="required">*</span></strong> -->
+                </label>
+                <input type="text" id="firstname" name="userfirst">
+            </p>
+            <p>
+                <label for="lastname">
+                    <span>Last Name: </span>
+                </label>
+                <input type="text" id="lastname" name="userlast">
+            </p>
+            <!-- (p>label>span^input)*4 -->
+            <p>
+                <label for="email">
+                    <span>Email: </span>
+                    <strong><span aria-label="required">*</span></strong>
+                </label>
+                <input type="email" id="email" name="usermail">
+            </p>
+            <p>
+                <label for="phone">
+                    <span>Phone Number:</span>
+                </label>
+                <input type="tel">
+            </p>
+            <p>
+                <label for="password">
+                    <span>Password: </span>
+                    <strong><span aria-label="required">*</span></strong>
+                </label>
+                <input type="password">
+            </p>
+            <p><label for="confirm">
+                    <span>Confirm Password: </span>
+                    <strong><span aria-label="required">*</span></strong>
+                </label>
+                <input type="password">
+            </p>
+
+            <button type="submit">Create Account</button>
+
+        </form>
+    </section>
+</body>
+
+</html>
