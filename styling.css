@@ -1,0 +1,72 @@
+        /* img[alt="background"] {
+            /* width: clamp(320px,1920px,100vh);
+            height: clamp(180px,1080px,100vh); */
+            /* width: 100vw;
+            height: 100vh;
+            position: absolute;
+            float: left; */
+        /* } */
+
+        /* figure {
+            width: 100vw;
+            height: 100vh;
+            position: absolute;
+            /* float: left; */
+        /* } */
+
+        img[alt="sidebar"] {
+            height: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            background-position: center;
+        }
+
+        section {
+            margin-left: 50%;
+            height: 100vh;
+            width: 60vw;
+            bottom: 168px;
+            right: 96px;
+            position: relative;
+            padding: 1em;
+            border: 1px solid #ccc;
+            border-radius: 1em;
+            border-color: brown;
+            background-color: whitesmoke;
+            box-sizing: border-box;
+            /* background-position: right; */
+        }
+
+        form{
+            /* Center the form on the page */
+            margin: 0 auto;
+            width: 400px;
+            /* Form outline */
+            padding: 1em;
+            border: 1px solid #877d7d;
+            border-radius: 1em;
+        }
+
+        button {
+
+        }
+
+        .sidebar{
+            width: 40vw;
+            height: 20vh;
+            background-color: rgba(180,150,128,0.5);
+            position: relative;
+            top: 30vh;
+        }
+
+        .bg {
+            background-image: url("vadim-sherbakov-NQSWvyVRIJk-unsplash.jpg");
+            height: 100vh;
+            width: 100vw;
+        }
+
+        :required {
+
+        }
