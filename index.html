@@ -5,74 +5,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign-up Form</title>
-
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styling.css">
+    <title>Sign-up Form</title>
 </head>
 
 <body>
-    <!-- <figure>
-        <img src="vadim-sherbakov-NQSWvyVRIJk-unsplash.jpg" alt="background">
-        <figcaption>Photo by Vadim Sherbakov on <a href="https://unsplash.com/photos/NQSWvyVRIJk">Unsplash</a></figcaption>
-    </figure> -->
     <div class="bg">
-    <div class="sidebar">
-        <img src="mountain-icon.jpg" alt="sidebar">
+        <div class="sidebar">
+            <div class="logo">
+                <img src="mountain-icon.jpg" alt="logo" class="icon">
+                <h1 class="haris">Haris</h1>
+            </div>
+        </div>
+
+        <section>
+            <div class="dummy-text left">
+                <p>This is not a real online services! You know you need something like this in your life to help you
+                    realize
+                    your deepest dreams. Sign up <em>now</em> to get started.</p>
+                <p class="remote-text">You <em>know</em> you want to</p>
+            </div>
+            <form action="#">
+                <div class="form left">
+                    <p class="form-title">Let's do this!</p>
+                    <div class="input">
+                        <label for="firstname">First Name:</label>
+                        <input type="text" id="firstname" name="userfirst" required>
+                    </div>
+                    <div class="input">
+                        <label for="lastname">Last Name:</label>
+                        <input type="text" id="lastname" name="userlast" required>
+                    </div>
+                    <!-- (p>label>span^input)*4 -->
+                    <div class="input">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="usermail" required>
+                    </div>
+                    <div class="input">
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone-number">
+                    </div>
+                    <div class="input">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <div class="input">
+                        <label for="confirm-password">Confirm Password:</label>
+                        <input type="password" id="confirm-password" name="confirm-password">
+                    </div>
+                </div>
+                <div class="button left">
+                    <button type="submit" class="left">Create Account</button>
+                </div>
+            </form>
+            <div class="log-in left">
+                <p>Already have an account?</p><a href="#">Log in</a>
+            </div>
+        </section>
     </div>
-
-    <section>
-        <h2>This is not a real online services! You know you need something like this in your life to help you realize
-            your deepest dreams. Sign up <em>now</em> to get started.</h2>
-        <h2>You <em>know</em> you want to</h2>
-
-        <form>
-            <h2>Let's do this!</h2>
-            <p>
-                <label for="firstname">
-                    <span>First Name: </span>
-                    <!-- <strong><span aria-label="required">*</span></strong> -->
-                </label>
-                <input type="text" id="firstname" name="userfirst">
-            </p>
-            <p>
-                <label for="lastname">
-                    <span>Last Name: </span>
-                </label>
-                <input type="text" id="lastname" name="userlast">
-            </p>
-            <!-- (p>label>span^input)*4 -->
-            <p>
-                <label for="email">
-                    <span>Email: </span>
-                    <strong><span aria-label="required">*</span></strong>
-                </label>
-                <input type="email" id="email" name="usermail">
-            </p>
-            <p>
-                <label for="phone">
-                    <span>Phone Number:</span>
-                </label>
-                <input type="tel">
-            </p>
-            <p>
-                <label for="password">
-                    <span>Password: </span>
-                    <strong><span aria-label="required">*</span></strong>
-                </label>
-                <input type="password">
-            </p>
-            <p><label for="confirm">
-                    <span>Confirm Password: </span>
-                    <strong><span aria-label="required">*</span></strong>
-                </label>
-                <input type="password">
-            </p>
-
-            <button type="submit">Create Account</button>
-
-        </form>
-    </div>
-    </section>
 </body>
 
 </html>
